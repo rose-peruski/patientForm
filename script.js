@@ -9,13 +9,10 @@ var env;
 $(document).ready(function(){
   $( "#insInformation" ).hide();
 
-  $( "#insYes" ).change(function() {
-    alert( "Handler for .change() called." );
-  });
-  $("#insYes").click(function() {
-        $( "#insInformation" ).show();
-        console.log("Something happened")
-      })
+  $("input[name='ins']:radio")
+    .change(function() {
+      $("#insInformation").toggle($(this).val() == "yes");
+       });
 
     $("#register").click(function() {
       var fname=$("#firstname").val();
