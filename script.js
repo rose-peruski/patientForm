@@ -23,8 +23,13 @@ $(document).ready(function(){
       var zip = $("#inputZip").val();
       var gender= $("#gender input[type='radio']:checked").val();
       var insurance = $("#insurance input[type='radio']:checked").val();
+      var insName = $("#insName").val();
+      var groupNo= $("#groupNo").val();
+      var policyNo= $("#policyNo").val();
+      var subName= $("#subName").val();
+      var subDOB= $("#subDOB").val();
 
-
+      console.log(insName);
 
     });
 
